@@ -1,0 +1,104 @@
+.hero{
+    padding: 90px;
+    background-image: url(../images/tareq-ajalyakin-72aEtYlS5K0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 80px 80px;
+
+    .container{
+        position: relative;
+    }
+
+    &__title{
+        color:antiquewhite;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    &__text{
+        color: aliceblue;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__ticket{
+        display: flex;
+        align-items: center;
+        background-color: #95afc0;
+        padding: 24px;
+        border-radius: 24px;
+        &__list{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            &__item{
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                b{
+                    display: block;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        &__button{
+            background-color:#273c75;
+            padding: 16px;
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            margin-left: 8px;
+            white-space: nowrap;
+            border-radius: 8px;
+        }
+
+
+    }
+
+    
+
+    &::before{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: .1;
+    }
+
+
+    @media (max-width:640px){
+        display: block;
+        
+        &__title{
+            font-size: 28px;
+        }
+
+        &__text{
+            font-size: 18px;
+        }
+
+        &__ticket{
+            display: block;
+            &__list{
+                display: block;
+                &__item{
+                    margin-bottom: 8px;
+                }
+            }
+            
+            &__button{
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+    }
+    @media (min-width:643px) and (max-width:1024px){
+
+    }
+}

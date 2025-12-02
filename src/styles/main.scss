@@ -1,0 +1,20 @@
+@use 'hero';
+@use 'event';
+@use 'footer';
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+}
+
+body{
+    background-image: url(/src/images/32227127_minimal_banner_with_black_stripes_design_0609.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
